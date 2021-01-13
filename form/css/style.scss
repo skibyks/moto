@@ -1,0 +1,40 @@
+@import "popup";
+@import "fonts";
+@import "libs";
+@import "vars";
+@import "datepicker";
+
+body,
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.button {
+  font-size: 14px;
+  font-weight: 700;
+  background-color: $yellow;
+  height: 38px;
+  width: 228px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  color: $title;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 38px;
+    background-color: #e1b100;
+    border-radius: 30px;
+    z-index: -1;
+  }
+}
